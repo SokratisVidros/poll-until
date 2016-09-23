@@ -1,13 +1,13 @@
-# poll-until
-[![](https://travis-ci.org/sokratisvidros/poll-until.svg?branch=master)](https://travis-ci.org/sokratisvidros/poll-until)
-[![](https://badge.fury.io/js/poll-until.svg)](https://www.npmjs.com/package/poll-until)
+# pollUntil
+[![](https://travis-ci.org/sokratisvidros/pollUntil.svg?branch=master)](https://travis-ci.org/sokratisvidros/pollUntil)
+[![](https://badge.fury.io/js/pollUntil.svg)](https://www.npmjs.com/package/pollUntil)
 
 A promised based time bomb poller.
 
 # Usage
-Start polling for the provided polling function `fn` using this promised based `poll-until`.
+Start polling for the provided polling function `fn` using this promised based `pollUntil`.
 
-As soon as the poller starts, a time bomb promise is also triggered. If the polling function is satisfied before the time bomb detonates, `poll-until` results `true` to the promise chain. Otherwise, it returns `false`.
+As soon as the poller starts, a time bomb promise is also triggered. If the polling function is satisfied before the time bomb detonates, `pollUntil` results `true` to the promise chain. Otherwise, it returns `false`.
 
 The library works with ES6 and ES5.
 
@@ -16,7 +16,7 @@ The library works with ES6 and ES5.
 ## Examples
 
 ```
-import pollUntil from 'poll-until';
+import pollUntil from 'pollUntil';
 
 let counter1 = 0;
 
@@ -39,7 +39,7 @@ pollUntil((c) => c > 10, counter, 100, 200)
     // result === false
     // ...
   });
-  
+
 ```
 
 For more examples, please have a look at project's tests.
