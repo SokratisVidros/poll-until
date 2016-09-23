@@ -4,14 +4,14 @@
 
 A promised based time bomb poller.
 
+`pollUntil(fn, args = [], timeout = 3000, pollInterval = 200)`
+
 # Usage
 Start polling for the provided polling function `fn` using this promised based `pollUntil`.
 
 As soon as the poller starts, a time bomb promise is also triggered. If the polling function is satisfied before the time bomb detonates, `pollUntil` results `true` to the promise chain. Otherwise, it returns `false`.
 
 The library works with ES6 and ES5.
-
-`pollUntil(fn, args = [], timeout = 3000, pollInterval = 200)`
 
 ## Examples
 
