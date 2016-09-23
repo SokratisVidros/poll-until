@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "poll-until",
   "version": "1.0.0",
   "description": "A promised based time bomb poller",
