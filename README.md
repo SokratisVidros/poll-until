@@ -1,5 +1,5 @@
 # pollUntil
-[![](https://travis-ci.org/sokratisvidros/pollUntil.svg?branch=master)](https://travis-ci.org/sokratisvidros/pollUntil)
+[![](https://travis-ci.org/SokratisVidros/pollUntil.svg?branch=master)](https://travis-ci.org/SokratisVidros/pollUntil)
 [![](https://badge.fury.io/js/pollUntil.svg)](https://www.npmjs.com/package/pollUntil)
 
 A promised based time bomb poller.
