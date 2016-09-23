@@ -2,7 +2,7 @@
   "private": true,
   "name": "poll-until",
   "version": "1.0.0",
-  "description": "A promised based timed poller",
+  "description": "A promised based time bomb poller",
   "repository": "SokratisVidros/poll-until",
   "author": "Sokratis Vidros <sokratis.vidros@gmail.com.com>",
   "contributors": [
@@ -29,7 +29,10 @@
     }
   },
   "dependencies": {
-    "babel-runtime": "^6.6.1"
+    "babel-runtime": "^6.6.1",
+    "eslint": "3.6.0",
+    "eslint-plugin-jsx-a11y": "2.2.2",
+    "eslint-plugin-react": "6.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.8.0",
@@ -43,16 +46,16 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "del": "^2.2.0",
-    "eslint": "^2.9.0",
-    "eslint-config-airbnb": "^9.0.1",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
     "eslint-plugin-import": "^1.7.0",
-    "eslint-plugin-jsx-a11y": "^1.2.0",
-    "eslint-plugin-react": "^5.1.1",
+    "eslint-plugin-jsx-a11y": "2.2.2",
+    "eslint-plugin-react": "6.3.0",
     "istanbul": "^1.0.0-alpha.2",
-    "mocha": "^2.4.5",
-    "rollup": "^0.26.2",
+    "mocha": "^3.0.2",
+    "rollup": "^0.36",
     "rollup-plugin-babel": "^2.4.0",
-    "sinon": "^2.0.0-pre"
+    "sinon": "^2.0.0-pre.3"
   },
   "scripts": {
     "lint": "eslint src test tools",
