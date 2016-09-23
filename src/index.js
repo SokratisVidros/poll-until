@@ -1,1 +1,1 @@
-export Greeting from './pollUntil.js';
+export pollUntil from './pollUntil.js';
