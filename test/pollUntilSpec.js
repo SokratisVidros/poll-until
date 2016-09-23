@@ -7,9 +7,9 @@ describe('pollUntil', () => {
   });
 
   context('when poller is satisfied on time', () => {
-    it('returns a promise passing "true" as its first argument', done => {
+    it('returns a promise passing "true" as its first argument', (done) => {
       pollUntil(flag => flag === true, [true])
-        .then(result => {
+        .then((result) => {
           expect(result).to.be.true;
           done();
         });
@@ -17,9 +17,9 @@ describe('pollUntil', () => {
   });
 
   context('when timebomb goes off', () => {
-    it('returns a promise passing "false" as its first argument', done => {
+    it('returns a promise passing "false" as its first argument', (done) => {
       pollUntil(flag => flag === true, [false], 1)
-        .then(result => {
+        .then((result) => {
           expect(result).to.be.false;
           done();
         });
@@ -27,9 +27,9 @@ describe('pollUntil', () => {
   });
 
   context('when error occurs while polling', () => {
-    it('throws the raised error', done => {
+    it('throws the raised error', (done) => {
       pollUntil(() => { throw new Error('Boom!'); }, 100, 10)
-        .catch(err => {
+        .catch((err) => {
           expect(err).to.be.an.instanceof(Error);
           expect(err.message).to.eq('Error: Boom!');
           done();

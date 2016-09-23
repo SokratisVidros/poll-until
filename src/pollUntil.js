@@ -17,7 +17,7 @@ export default function pollUntil(fn, args = [], timeout = 3000, pollInterval = 
     clearTimeout(s2);
   }
 
-  const poller = new Promise(resolve => {
+  const poller = new Promise((resolve) => {
     (function poll() {
       const result = fn.apply(this, args);
       if (result) {
@@ -25,22 +25,22 @@ export default function pollUntil(fn, args = [], timeout = 3000, pollInterval = 
       } else {
         s1 = setTimeout(poll, pollInterval);
       }
-    })();
+    }());
   });
 
-  const timebomb = new Promise(resolve => {
+  const timebomb = new Promise((resolve) => {
     s2 = setTimeout(() => {
       resolve(false);
     }, timeout);
   });
 
   return Promise.race([poller, timebomb])
-    .then(res => {
+    .then((res) => {
       clearSchedulers();
       return Promise.resolve(res);
     })
-    .catch(e => {
+    .catch((err) => {
       clearSchedulers();
-      throw new Error(e);
+      throw new Error(err);
     });
 }
