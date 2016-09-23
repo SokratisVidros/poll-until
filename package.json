@@ -1,6 +1,6 @@
 {
   "name": "pollUntil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A promised based time bomb poller",
   "repository": "SokratisVidros/pollUntil",
   "author": "Sokratis Vidros <sokratis.vidros@gmail.com.com>",
