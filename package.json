@@ -2,7 +2,7 @@
   "name": "pollUntil",
   "version": "1.0.2",
   "description": "A promised based time bomb poller",
-  "repository": "SokratisVidros/pollUntil",
+  "repository": "SokratisVidros/poll-until",
   "author": "Sokratis Vidros <sokratis.vidros@gmail.com.com>",
   "contributors": [
     "Sokratis Vidros <sokratis.vidros@gmail.com.com>"
@@ -15,8 +15,9 @@
     "timeout",
     "timebomb"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
   "jsnext:main": "index.es6.js",
+  "typings": "src/index",
   "babel": {
     "presets": [
       "es2015",
@@ -32,7 +33,13 @@
     "rules": {
       "no-param-reassign": 0,
       "import/no-mutable-exports": 0,
-      "import/no-extraneous-dependencies": 0
+      "import/no-extraneous-dependencies": 0,
+      "no-useless-rename": [
+        "error",
+        {
+          "ignoreExport": true
+        }
+      ]
     }
   },
   "dependencies": {
@@ -54,7 +61,7 @@
     "del": "^2.2.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
-    "eslint-plugin-import": "^1.7.0",
+    "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "2.2.2",
     "eslint-plugin-react": "6.3.0",
     "istanbul": "^1.0.0-alpha.2",

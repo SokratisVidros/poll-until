@@ -1,5 +1,5 @@
-# pollUntil
-[![](https://travis-ci.org/SokratisVidros/pollUntil.svg?branch=master)](https://travis-ci.org/SokratisVidros/pollUntil)
+# poll-until
+[![](https://travis-ci.org/SokratisVidros/poll-until.svg?branch=master)](https://travis-ci.org/SokratisVidros/poll-until)
 [![](https://badge.fury.io/js/pollUntil.svg)](https://www.npmjs.com/package/pollUntil)
 
 A promised based time bomb poller.
@@ -11,7 +11,7 @@ Start polling for the provided polling function `fn` using this promised based `
 
 As soon as the poller starts, a time bomb promise is also triggered. If the polling function is satisfied before the time bomb detonates, `pollUntil` results `true` to the promise chain. Otherwise, it returns `false`.
 
-The library works with ES6 and ES5.
+The library works with Typescript, ES6 and ES5.
 
 ## Examples
 
